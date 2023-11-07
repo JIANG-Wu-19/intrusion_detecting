@@ -1,8 +1,12 @@
 > [Toward Early and Accurate Network Intrusion Detection Using Graph Embedding | IEEE Journals & Magazine | IEEE Xplore](https://ieeexplore.ieee.org/document/10262084/references)
 
+`first`文件夹是算法最早的版本
+
 ## 使用flowcontainer提取ip packets length
 
 调用已有库进行提取即可
+
+由`features_extraction.py`实现
 
 ## 图构建
 
@@ -28,6 +32,8 @@
 * 将节点特征直接表示在features特性中
 
 最终导出json文件
+
+由`graph_construction.py`实现
 
 ## graph2vec
 
