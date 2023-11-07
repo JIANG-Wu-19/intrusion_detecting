@@ -9,8 +9,6 @@ def read_csv(num):
     return ip_packets_length
 
 
-# print(read_csv(0))
-
 def graph_constructed(ip_packets_length):
     features = {}
     edges = []
@@ -70,9 +68,6 @@ def graph_constructed(ip_packets_length):
     return res
 
 
-# with open("./json/{}.json".format(num), "w") as f:
-# print(graph_constructed(read_csv(0)))
-
 path = './csv'
 files = os.listdir(path)
 
@@ -81,7 +76,3 @@ for i in range(len(files)):
     with open("./json/{}.json".format(i), "w") as f:
         json.dump(j, f, indent=4, ensure_ascii=False)
 
-# for j in range(len(files)):
-#     graph_constructed(j)
-
-# graph_constructed(0)
