@@ -39,5 +39,38 @@
 
 ## graph2vec
 
+> [benedekrozemberczki/graph2vec: A parallel implementation of "graph2vec: Learning Distributed Representations of Graphs" (MLGWorkshop 2017). (github.com)](https://github.com/benedekrozemberczki/graph2vec)
 
+文件夹是`src`,`dataset`,`features`
+
+### input and output options
+
+```
+  --input-path   STR    Input folder.           Default is `dataset/`.
+  --output-path  STR    Embeddings path.        Default is `features/nci1.csv`.
+```
+
+example
+
+```
+$ python src/graph2vec.py --input-path new_data/ --output-path features/nci2.csv
+```
+
+本实验中
+
+```
+$ python src/graph2vec.py --input-path json/ --output-path features/nci2.csv
+```
+
+### model options
+
+```
+  --dimensions     INT          Number of dimensions.                             Default is 128.
+  --workers        INT          Number of workers.                                Default is 4.
+  --epochs         INT          Number of training epochs.                        Default is 1.
+  --min-count      INT          Minimal feature count to keep.                    Default is 5.
+  --wl-iterations  INT          Number of feature extraction recursions.          Default is 2.
+  --learning-rate  FLOAT        Initial learning rate.                            Default is 0.025.
+  --down-sampling  FLOAT        Down sampling rate for frequent features.         Default is 0.0001.
+```
 
